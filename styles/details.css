@@ -1,0 +1,123 @@
+
+.product-page {
+    display: flex;
+    margin-top: 1rem;
+    margin-right: 1rem;
+}
+
+.product-image img {
+    width: 100%;
+    height: auto;
+    max-width: 40rem;
+}
+.image-thumbnails {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+    gap: 1rem;
+    margin-top: 1rem;
+}
+.product-details {
+    max-width: 600px;
+    margin-left: 2rem;
+    margin-top: 0;
+}
+
+.product-details h1 {
+    font-family: var(--font-primary);
+    font-size: 2rem;
+    color: var(--bosgroen);
+    margin-bottom: 1rem;
+    margin-top: 0;
+}
+
+.product-details .price {
+    font-size: 1.5rem;
+    color: var(--terracotta);
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.product-details .short-description {
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.product-description h2, .product-specifications h2 {
+    font-family: var(--font-secondary);
+    font-size: 1.25rem;
+    color: var(--bosgroen);
+    margin-bottom: 0.5rem;
+}
+
+.product-description p, .product-specifications ul {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+.product-specifications ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.product-specifications li {
+    margin-bottom: 0.5rem;
+}
+
+.product-actions {
+    margin-top: 1.5rem;
+}
+
+.add-to-cart {
+    background-color: var(--terracotta);
+    color: var(--roomwit);
+    padding: 1rem 2rem;
+    font-size: 1.1rem;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.add-to-cart:hover {
+    background-color: var(--bosgroen);
+}
+
+
+
+@media screen and (max-width: 768px) {
+    .product-page {
+        flex-direction: column;
+        align-items: center;
+    }
+    .product-image img {
+        max-width: 100%;
+    }
+    .product-details {
+        margin-left: 0;
+        margin-top: 1rem;
+    }
+    .product-details h1 {
+        font-size: 1.5rem;
+    }
+    .product-details .price {
+        font-size: 1.25rem;
+    }
+    .product-details .short-description {
+        font-size: 0.9rem;
+    }
+    .product-description h2, .product-specifications h2 {
+        font-size: 1.1rem;
+    }
+    .product-description p, .product-specifications ul {
+        font-size: 0.9rem;
+    }
+    .product-specifications li {
+        font-size: 0.9rem;
+    }
+
+    .add-to-cart {
+        font-size: 1rem;
+        padding: 0.8rem 1.5rem;
+        margin-bottom:1rem;
+    }
+    
+}

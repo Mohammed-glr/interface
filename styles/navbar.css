@@ -1,0 +1,124 @@
+@import "./globals.css";
+
+
+.naVcontainer {
+    width: 100%;
+    background-color: var(--bosgroen);
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    transition: slideInFromTop 0.5s ease-in-out;
+}
+
+@keyframes slideInFromTop {
+    from {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+
+.naVcontainer nav ul {
+    display: flex;
+    justify-content: start;  
+    align-items: center;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+
+.naVcontainer nav ul li {
+    margin: 0 1em;
+    padding: 0.5em 1em;
+}
+
+.naVcontainer nav ul li a {
+    color: var(--zandbeige);
+    font-family: var(--font-primary);
+    font-size: 1.2em;
+    font-weight: 100;
+    text-transform: uppercase;
+    transition: all 0.3s ease-in-out;
+    margin-bottom: 1em;
+}
+
+.naVcontainer nav ul li a:hover {
+    color: var(--terracotta);
+}
+
+
+.hamburger {
+    display: none; 
+    font-size: 2rem;
+    color: var(--zandbeige);
+    cursor: pointer;
+    position: absolute;
+    top: 1rem;
+    right: 1.5rem;
+    z-index: 1001;
+    transition: all 0.3s ease-in-out;
+    color: var(--bosgroen);
+}
+
+.hamburger:hover {
+    color: var(--terracotta);
+}
+
+
+.naVcontainer nav ul.active {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 60px; 
+    right: 0;
+    width: 100%;
+    background-color: var(--bosgroen);
+    text-align: center;
+}
+
+
+.naVcontainer nav ul li {
+    width: 100%;
+    padding: 1em;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .naVcontainer nav ul {
+        display: none;
+        flex-direction: column;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .naVcontainer nav ul.active {
+        display: flex;
+    }
+
+    .naVcontainer nav ul li a {
+        font-size: 1.5em;
+    }
+}
+
+.icon img {
+    width: 2em;
+    height: 2em;
+    margin: 0 1em;
+    float: right;
+    position: fixed;
+    bottom: 1.35em;
+    right: 0.5em;
+    transition: all 0.3s ease-in-out;
+}
+
+.icon img:hover {
+    cursor: pointer;
+}

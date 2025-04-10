@@ -1,0 +1,31 @@
+:root {
+    --bosgroen: #2F5D50;
+    --zandbeige: #EDE6DB;
+    --leemgrijs: #B6B1A9;
+    --terracotta: #D28C72;
+    --roomwit: #FDFBF6;
+  
+
+    --font-primary: 'Playfair Display', serif; 
+    --font-secondary: 'Lato', sans-serif; 
+  
+    
+    --border-radius: 0.75em; 
+    --max-width: 75em; 
+    --padding: 1.25em; 
+  }
+  
+  body {
+    font-family: var(--font-secondary);
+    background-color: var(--roomwit);
+    color: var(--leemgrijs);
+    margin: 0;
+    padding: 1em;
+    line-height: 1.6;
+    height: 100vh;
+  }
+
+  a{
+    text-decoration: none;
+  }
+  
