@@ -8,11 +8,14 @@
     <link rel="stylesheet" href="../styles/navbar.css">
     <link rel="stylesheet" href="../styles/globals.css">
     <script src="../scripts/hamburger.js" defer></script>
-    <script src="../scripts/cart.js" defer></script>
+    <script src="../scripts/bestel.js" defer></script>
 </head>
 <body>
     <div class="naVcontainer">
         <nav>
+            <div class="hamburger" id="hamburger-icon">
+                &#9776; 
+            </div>
             <ul id="navbar" class="navbar">
                 <li><a href="../index.html">Home</a></li>
                 <li><a href="./about.html">Over Ons</a></li>
@@ -24,8 +27,7 @@
     <section class="cart-page">
         <h1>Winkelmand</h1>
         
-        <div id="cart-items">
-        </div>
+        <div id="cart-items"></div>
 
         <div class="cart-total">
             <p>Totaal: €<span id="total-price">0.00</span></p>

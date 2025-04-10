@@ -84,9 +84,7 @@
 
 
 .naVcontainer nav ul li {
-    width: 100%;
     padding: 1em;
-    text-align: center;
 }
 
 @media (max-width: 768px) {

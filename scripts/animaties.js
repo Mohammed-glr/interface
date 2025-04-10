@@ -1,4 +1,3 @@
-// Maak een nieuwe IntersectionObserver aan
 const observer = new IntersectionObserver((entries, observer) => {
     entries.forEach(entry => {
         if (entry.isIntersecting) {
@@ -15,3 +14,5 @@ const productCards = document.querySelectorAll('.product-card');
 
 observer.observe(heroText);
 productCards.forEach(card => observer.observe(card));
+
+
