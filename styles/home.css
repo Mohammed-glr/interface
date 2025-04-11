@@ -93,6 +93,27 @@
     }
 }
 
+@media screen and (max-width: 480px) {
+    .hero .hero-text h1 {
+        font-size: clamp(4rem, 10vw, 6rem);
+        line-height: 1;
+    }
+    .hero .hero-text .qoute span {
+        font-size: clamp(0.8rem, 5vw, 1.2rem);
+    }
+    .hero .hero-text .subTitle {
+        font-size: clamp(0.5rem, 10vw, 0.8rem);
+    }
+    .hero .hero-button a {
+        font-size: clamp(0.5rem, 10vw, 0.6rem);
+    }
+    .hero .hero-text {
+        margin: 0;
+    }
+    
+    
+}
+
 @keyframes fadeIn {
     from {
         opacity: 0;

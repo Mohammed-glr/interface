@@ -27,10 +27,10 @@
 
   a{
     text-decoration: none;
-  }
-  
 
-button{
+  }
+
+button {
     background-color: var(--bosgroen);
     color: var(--roomwit);
     border: none;
@@ -38,10 +38,25 @@ button{
     cursor: pointer;
     font-family: var(--font-secondary);
     font-size: 1em;
-    transition: all 0.3s ease;
-    margin-bottom: 1em;
+    transition: background-color 0.3s ease;
   }
   
   button:hover {
     background-color: var(--terracotta);
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-primary);
+    color: var(--bosgroen);
+  }
+  
+  p {
+    margin-bottom: 1em;
+  }
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  li {
+    margin-bottom: 0.5em;
   }

@@ -1,0 +1,8 @@
+{
+    "name": "mo",
+    "email": "102376@glr.nl",
+    "street": "nikelstraat",
+    "huisnummer": "23",
+    "city": "rotterdam",
+    "zipcode": "1212 BN"
+}
