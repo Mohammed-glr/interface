@@ -55,7 +55,7 @@ $totalPrice = 0;
         </div>
 
         <button>
-            <a href="../index.html" class="button">Terug naar Home</a>
+            <a href="../index.php" class="button">Terug naar Home</a>
         </button>
         <button>
             <a href="../pages/overZicht.html" class="button">Terug naar Overzicht</a>

@@ -17,7 +17,7 @@
                 &#9776; 
             </div>
             <ul id="navbar" class="navbar">
-                <li><a href="../index.html">Home</a></li>
+                <li><a href="../index.php">Home</a></li>
                 <li><a href="./about.html">Over Ons</a></li>
                 <li><a href="./overZicht.html">Overzicht</a></li>
             </ul>
@@ -40,7 +40,7 @@
         }
         ?>
 
-        <form id="order-form" method="POST" action="../api/bestel_verwerk.php">
+        <form id="order-form" method="POST" action="../backendBestel/bestel_verwerk.php">
             <h2>Bestellen</h2>
 
             <input type="hidden" name="csrf_token" value="<?php echo $_SESSION['csrf_token']; ?>">
