@@ -19,39 +19,6 @@ $totalPrice = 0;
     <title>Bestelling Verwerkt</title>
     <link rel="stylesheet" href="../styles/globals.css">
     <link rel="stylesheet" href="../styles/bestel.css">
-    <style>
-        .order-summary {
-            margin-top: 2rem;
-            width: 100%;
-        }
-        .order-items {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 1rem;
-            margin: 1rem 0;
-        }
-        .order-item {
-            background-color: var(--zandbeige);
-            padding: 1rem;
-            border-radius: var(--border-radius);
-            display: flex;
-            flex-direction: column;
-        }
-        .order-item img {
-            width: 100%;
-            height: auto;
-            max-width: 100px;
-            object-fit: cover;
-            margin-bottom: 0.5rem;
-        }
-        .total-price {
-            font-weight: bold;
-            font-size: 1.2rem;
-            margin-top: 1rem;
-            color: var(--bosgroen);
-            text-align: right;
-        }
-    </style>
 </head>
 <body>
     <div class="container">
