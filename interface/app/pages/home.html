@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>leto</title>
+    <link rel="stylesheet" href="../../output.css">
+    <link rel="stylesheet" href="../assets/css/styles.css">
+</head>
+<body class="min-h-screen font-sans w-screen h-auto">
+    <header class=" bg-opacity-10 backdrop-blur-xl shadow-lg sticky top-0 z-50  border-opacity-20">
+        <nav class="container mx-auto flex items-center justify-between py-4 px-4 md:px-6">
+            <div class="text-xl md:text-2xl font-light text-stone-800 tracking-wide logo-font">leto</div>
+
+            
+            <ul class="hidden md:flex space-x-8">
+                <li>
+                    <a href="#home" class="text-stone-600 hover:text-stone-800 transition-all duration-300 font-light relative group">
+                        Home
+                        <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-stone-700 transition-all duration-300 group-hover:w-full"></span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#info" class="text-stone-600 hover:text-stone-800 transition-all duration-300 font-light relative group">
+                        Info
+                        <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-stone-700 transition-all duration-300 group-hover:w-full"></span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#shopoverview" class="text-stone-600 hover:text-stone-800 transition-all duration-300 font-light relative group">
+                        Shop
+                        <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-stone-700 transition-all duration-300 group-hover:w-full"></span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#location" class="text-stone-600 hover:text-stone-800 transition-all duration-300 font-light relative group">
+                        Locatie
+                        <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-stone-700 transition-all duration-300 group-hover:w-full"></span>
+                    </a>
+                </li>
+                <li>
+                    <button onclick="openSignupModal()" class="text-white bg-stone-700 hover:bg-stone-800 px-6 py-2 transition-all duration-300 font-light btn-elegant shadow-md hover:shadow-lg">Meld Je Aan</button>
+                </li>
+            </ul>
+
+            <button class="md:hidden flex flex-col items-center justify-center w-8 h-8 space-y-1" onclick="toggleMobileMenu()">
+                <span class="block w-6 h-0.5 bg-stone-700 transition-all duration-300" id="hamburger-1"></span>
+                <span class="block w-6 h-0.5 bg-stone-700 transition-all duration-300" id="hamburger-2"></span>
+                <span class="block w-6 h-0.5 bg-stone-700 transition-all duration-300" id="hamburger-3"></span>
+            </button>
+        </nav>
+
+        <div class="md:hidden hidden bg-stone-50 bg-opacity-95 backdrop-blur-md border-t border-stone-200" id="mobile-menu">
+            <div class="container mx-auto py-4 px-4">
+                <ul class="space-y-4">
+                    <li>
+                        <a href="#home" class="block text-stone-600 hover:text-stone-800 transition-colors font-light py-2" onclick="closeMobileMenu()">Home</a>
+                    </li>
+                    <li>
+                        <a href="#info" class="block text-stone-600 hover:text-stone-800 transition-colors font-light py-2" onclick="closeMobileMenu()">Info</a>
+                    </li>
+                    <li>
+                        <a href="#shopoverview" class="block text-stone-600 hover:text-stone-800 transition-colors font-light py-2" onclick="closeMobileMenu()">Shop</a>
+                    </li>
+                    <li>
+                        <a href="#location" class="block text-stone-600 hover:text-stone-800 transition-colors font-light py-2" onclick="closeMobileMenu()">Locatie</a>
+                    </li>                <li>
+                    <button onclick="openSignupModal()" class="block text-white bg-stone-700 hover:bg-stone-800 px-6 py-3 transition-colors font-light text-center w-full">Meld Je Aan</button>
+                </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section id="home" class="relative min-h-screen flex items-center justify-center overflow-hidden">
+            <div class="absolute inset-0 z-0">
+                <img class="z-10 w-full h-full object-cover scale-105" src="../../static/img/7.jpg" alt="Leto Korean Fashion Background">
+                <div class="absolute inset-0 bg-gradient-to-b from-black/20 via-transparent to-black/30 z-20"></div>
+            </div>
+            <div class="relative z-30 text-center text-white px-4 md:px-6 animate-slide-in">
+                <h1 class="text-4xl md:text-5xl lg:text-9xl font-light mb-4 md:mb-6 tracking-wide logo-font gradient-text floating">LETO</h1>
+                <p class="text-lg md:text-xl lg:text-2xl font-light mb-6 md:mb-8 max-w-2xl mx-auto leading-relaxed opacity-90">
+                    Minimalistische Koreaanse Mode voor de Moderne Vrouw
+                </p>
+                <div class="glass-effect text-white px-6 py-4 md:px-8 md:py-6 inline-block shadow-2xl hover-lift">
+                    <p class="text-base md:text-lg font-light mb-2">Feestelijke Opening</p>
+                    <p class="text-xl md:text-2xl font-light">08 Augustus 2024</p>
+                    <p class="text-xs md:text-sm opacity-90">17:00 - 23:00</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="info" class="py-12 md:py-16 gradient-bg">
+            <div class="container mx-auto px-4 md:px-6">
+                <h2 class="text-3xl md:text-4xl font-light text-center mb-8 md:mb-12 text-stone-800 logo-font">Feestelijke Opening</h2>
+                <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-6 md:gap-8">
+                    <div class="bg-white p-6 md:p-8 shadow-lg text-center border-l-4 border-stone-300 hover-lift animate-slide-in">
+                        <div class="w-12 h-12 md:w-16 md:h-16 mx-auto mb-4 bg-gradient-to-br from-stone-200 to-stone-300 flex items-center justify-center shadow-inner">
+                            <div class="w-6 h-6 md:w-8 md:h-8 bg-stone-500 rounded-full"></div>
+                        </div>
+                        <h3 class="text-lg md:text-xl font-light mb-3 md:mb-4 text-stone-800">Live DJ</h3>
+                        <p class="text-stone-600 leading-relaxed text-sm md:text-base">Geniet van de beste K-pop en chill muziek tijdens de opening</p>
+                    </div>
+                    <div class="bg-white p-6 md:p-8 shadow-lg text-center border-l-4 border-stone-300 hover-lift animate-slide-in" style="animation-delay: 0.2s;">
+                        <div class="w-12 h-12 md:w-16 md:h-16 mx-auto mb-4 bg-gradient-to-br from-stone-200 to-stone-300 flex items-center justify-center shadow-inner">
+                            <div class="w-6 h-6 md:w-8 md:h-8 bg-stone-500 rounded-full"></div>
+                        </div>
+                        <h3 class="text-lg md:text-xl font-light mb-3 md:mb-4 text-stone-800">Speciale Aanbiedingen</h3>
+                        <p class="text-stone-600 leading-relaxed text-sm md:text-base">Eerste 100 bezoekers krijgen 30% korting op hun eerste aankoop</p>
+                    </div>
+                    <div class="bg-white p-6 md:p-8 shadow-lg text-center border-l-4 border-stone-300 sm:col-span-2 md:col-span-1 hover-lift animate-slide-in" style="animation-delay: 0.4s;">
+                        <div class="w-12 h-12 md:w-16 md:h-16 mx-auto mb-4 bg-gradient-to-br from-stone-200 to-stone-300 flex items-center justify-center shadow-inner">
+                            <div class="w-6 h-6 md:w-8 md:h-8 bg-stone-500 rounded-full"></div>
+                        </div>
+                        <h3 class="text-lg md:text-xl font-light mb-3 md:mb-4 text-stone-800">Locatie</h3>
+                        <p class="text-stone-600 leading-relaxed text-sm md:text-base">Kruiskade 88</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="shopoverview" class="py-12 md:py-16 bg-white relative overflow-hidden">
+            <div class="absolute inset-0 bg-gradient-to-br from-white via-stone-50/30 to-white"></div>
+            <div class="container mx-auto px-4 md:px-6 relative z-10">
+                <h2 class="text-3xl md:text-4xl font-light text-center mb-8 md:mb-12 text-stone-800 logo-font">Onze Collectie</h2>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8">
+                    <div class="group cursor-pointer hover-lift">
+                        <div class="bg-stone-50 h-48 md:h-64 mb-4 overflow-hidden shadow-lg group-hover:shadow-2xl transition-all duration-500 relative">
+                            <img src="../../static/img/1.jpg" alt="Elegante Jurken" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                            <div class="absolute p-5 inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                        </div>
+                        <h3 class="text-lg md:text-xl font-light mb-2 text-stone-800 group-hover:text-stone-900 transition-colors">Jurken</h3>
+                        <p class="text-stone-600 leading-relaxed text-sm md:text-base">Elegante minimalistische jurken in zachte kleuren</p>
+                    </div>
+                    <div class="group cursor-pointer hover-lift">
+                        <div class="bg-stone-50 h-48 md:h-64 mb-4 overflow-hidden shadow-lg group-hover:shadow-2xl transition-all duration-500 relative">
+                            <img src="../../static/img/3.jpg" alt="Tops & Blouses" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                            <div class="absolute p-5 inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                        </div>
+                        <h3 class="text-lg md:text-xl font-light mb-2 text-stone-800 group-hover:text-stone-900 transition-colors">Tops & Blouses</h3>
+                        <p class="text-stone-600 leading-relaxed text-sm md:text-base">Verfijnde tops met schone lijnen en perfecte pasvorm</p>
+                    </div>
+                    <div class="group cursor-pointer hover-lift">
+                        <div class="bg-stone-50 h-48 md:h-64 mb-4 overflow-hidden shadow-lg group-hover:shadow-2xl transition-all duration-500 relative">
+                            <img src="../../static/img/5.jpg" alt="Broeken" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                            <div class="absolute p-5 inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                        </div>
+                        <h3 class="text-lg md:text-xl font-light mb-2 text-stone-800 group-hover:text-stone-900 transition-colors">Broeken</h3>
+                        <p class="text-stone-600 leading-relaxed text-sm md:text-base">Comfortabele broeken met moderne silhouetten</p>
+                    </div>
+                    <div class="group cursor-pointer hover-lift">
+                        <div class="bg-stone-50 h-48 md:h-64 mb-4 overflow-hidden shadow-lg group-hover:shadow-2xl transition-all duration-500 relative">
+                            <img src="../../static/img/6.jpg" alt="Outerwear" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                            <div class="absolute p-5 inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                        </div>
+                        <h3 class="text-lg md:text-xl font-light mb-2 text-stone-800 group-hover:text-stone-900 transition-colors">Outerwear</h3>
+                        <p class="text-stone-600 leading-relaxed text-sm md:text-base">Stijlvolle jassen en vesten voor elke gelegenheid</p>
+                    </div>
+                </div>
+                
+                <div class="mt-12 md:mt-16">
+                    <h3 class="text-xl md:text-2xl font-light text-center mb-6 md:mb-8 text-stone-800">Meer van Onze Collectie</h3>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 md:gap-6">
+                        <div class="group cursor-pointer overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 hover-lift">
+                            <img src="../../static/img/2.webp" alt="Collectie Item" class="w-full h-40 md:h-48 object-cover group-hover:scale-110 transition-transform duration-700">
+                        </div>
+                        <div class="group cursor-pointer overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 hover-lift">
+                            <img src="../../static/img/4.webp" alt="Collectie Item" class="w-full h-40 md:h-48 object-cover group-hover:scale-110 transition-transform duration-700">
+                        </div>
+                        <div class="group cursor-pointer overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 sm:col-span-2 md:col-span-1 hover-lift">
+                            <img src="../../static/img/col.webp" alt="Collectie Item" class="w-full h-40 md:h-48 object-cover group-hover:scale-110 transition-transform duration-700">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="location" class="py-12 md:py-16 bg-stone-50">
+            <div class="container mx-auto px-4 md:px-6">
+                <h2 class="text-3xl md:text-4xl font-light text-center mb-8 md:mb-12 text-stone-800">Bezoek Onze Winkel</h2>
+                <div class="grid md:grid-cols-2 gap-8 md:gap-12 items-center">
+                    <div class="order-2 md:order-1">
+                        <div class="bg-white p-6 md:p-8 shadow-sm border-l-4 border-stone-200">
+                            <h3 class="text-2xl md:text-3xl font-light mb-4 text-stone-800">Kruiskade 88</h3>
+                            <p class="text-stone-600 leading-relaxed mb-6 text-sm md:text-base">
+                                Ontdek onze prachtige collectie in het hart van de stad. Onze winkel is gemakkelijk bereikbaar met het openbaar vervoer en er is voldoende parkeergelegenheid in de buurt.
+                            </p>
+                            <div class="space-y-3 text-stone-600 text-sm md:text-base">
+                                <div class="flex items-center">
+                                    <div class="w-2 h-2 bg-stone-400 mr-3"></div>
+                                    <span>Openingstijden: Ma-Za 10:00 - 18:00</span>
+                                </div>
+                                <div class="flex items-center">
+                                    <div class="w-2 h-2 bg-stone-400 mr-3"></div>
+                                    <span>Zondag: 12:00 - 17:00</span>
+                                </div>
+                                <div class="flex items-center">
+                                    <div class="w-2 h-2 bg-stone-400 mr-3"></div>
+                                    <span>Gratis parkeren beschikbaar</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="order-1 md:order-2">
+                        <div class="bg-white p-2 shadow-sm overflow-hidden">
+                            <img src="../../static/img/map.png" alt="Kaart van Leto winkel locatie" class="w-full h-64 md:h-80 object-cover">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-12 md:py-16 bg-stone-50">
+            <div class="container mx-auto px-4 md:px-6 text-center">
+                <h2 class="text-3xl md:text-4xl font-light mb-6 md:mb-8 text-stone-800">Kom Naar Onze Opening!</h2>
+                <div class="bg-white p-6 md:p-8 shadow-sm max-w-2xl mx-auto border-l-4 border-stone-200">
+                    <div class="text-xl md:text-2xl font-light text-stone-700 mb-3 md:mb-4">08 Augustus 2024</div>
+                    <div class="text-base md:text-lg mb-4 text-stone-600">17:00 - 23:00</div>
+                    <div class="text-stone-600 mb-6 leading-relaxed text-sm md:text-base">
+                        <p class="mb-2">Kalverstraat 123, 1012 AB Amsterdam</p>
+                        <p class="mb-2">Live DJ den hele avond</p>
+                        <p class="mb-2">30% korting voor eerste 100 bezoekers</p>
+                        <p>Welkomstdrankje en hapjes</p>
+                    </div>
+                    <button onclick="openSignupModal()" class="inline-block bg-stone-700 text-white px-6 py-2 md:px-8 md:py-3 hover:bg-stone-800 transition-all duration-300 font-light text-sm md:text-base btn-elegant shadow-lg hover:shadow-xl transform hover:scale-105">
+                        Meld Je Aan
+                    </button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div id="signupModal" class="fixed inset-0 bg-black bg-opacity-50 backdrop-blur-sm z-50 hidden items-center justify-center p-4">
+        <div class="bg-white max-w-2xl w-full mx-4 shadow-2xl transform scale-95 transition-all duration-300" id="modalContent">
+            <div class="p-6 md:p-8">
+                <div class="flex justify-between items-center mb-6">
+                    <h2 class="text-2xl md:text-3xl font-light text-stone-800 logo-font">Meld Je Aan</h2>
+                    <button onclick="closeSignupModal()" class="text-stone-400 hover:text-stone-600 transition-colors">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                        </svg>
+                    </button>
+                </div>
+
+                <form id="signupForm" class="space-y-4">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <div>
+                            <label for="firstName" class="block text-sm font-light text-stone-700 mb-2">Voornaam</label>
+                            <input type="text" id="firstName" name="firstName" required class="w-full px-4 py-3 border border-stone-200 focus:border-stone-400 focus:outline-none transition-colors font-light" placeholder="Je voornaam">
+                        </div>
+                        <div>
+                            <label for="lastName" class="block text-sm font-light text-stone-700 mb-2">Achternaam</label>
+                            <input type="text" id="lastName" name="lastName" required class="w-full px-4 py-3 border border-stone-200 focus:border-stone-400 focus:outline-none transition-colors font-light" placeholder="Je achternaam">
+                        </div>
+                    </div>
+                    
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <div>
+                            <label for="email" class="block text-sm font-light text-stone-700 mb-2">E-mailadres </label>
+                            <input type="email" id="email" name="email" required class="w-full px-4 py-3 border border-stone-200 focus:border-stone-400 focus:outline-none transition-colors font-light" placeholder="je@email.com">
+                        </div>
+                        <div>
+                            <label for="phone" class="block text-sm font-light text-stone-700 mb-2">Telefoonnummer</label>
+                            <input type="tel" id="phone" name="phone" required class="w-full px-4 py-3 border border-stone-200 focus:border-stone-400 focus:outline-none transition-colors font-light" placeholder="06 12 34 56 78" pattern="[0-9]{10}">
+                        </div>
+                    </div>
+
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <div>
+                            <label for="birthdate" class="block text-sm font-light text-stone-700 mb-2">Geboortedatum</label>
+                            <input type="date" id="birthdate" name="birthdate" class="w-full px-4 py-3 border border-stone-200 focus:border-stone-400 focus:outline-none transition-colors font-light" max="2006-12-31">
+                        </div>
+                        <div>
+                            <label for="gender" class="block text-sm font-light text-stone-700 mb-2">Geslacht</label>
+                            <select id="gender" name="gender" class="w-full px-4 py-3 border border-stone-200 focus:border-stone-400 focus:outline-none transition-colors font-light">
+                                <option value="">Selecteer...</option>
+                                <option value="vrouw">Vrouw</option>
+                                <option value="man">Man</option>
+                                <option value="anders">Anders</option>
+                                <option value="geen-antwoord">Zeg ik liever niet</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <div>
+                            <label for="city" class="block text-sm font-light text-stone-700 mb-2">Woonplaats</label>
+                            <input type="text" id="city" name="city" class="w-full px-4 py-3 border border-stone-200 focus:border-stone-400 focus:outline-none transition-colors font-light" placeholder="Amsterdam">
+                        </div>
+                        <div>
+                            <label for="postalCode" class="block text-sm font-light text-stone-700 mb-2">Postcode</label>
+                            <input type="text" id="postalCode" name="postalCode" class="w-full px-4 py-3 border border-stone-200 focus:border-stone-400 focus:outline-none transition-colors font-light" placeholder="1234 AB" pattern="[0-9]{4}\s?[A-Za-z]{2}">
+                        </div>
+                    </div>
+
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div>
+                            <label class="block text-sm font-light text-stone-700 mb-3">Interesses</label>
+                            <div class="space-y-2">
+                                <label class="flex items-center">
+                                    <input type="checkbox" name="interests" value="jurken" class="mr-2">
+                                    <span class="text-sm font-light">Jurken</span>
+                                </label>
+                                <label class="flex items-center">
+                                    <input type="checkbox" name="interests" value="tops" class="mr-2">
+                                    <span class="text-sm font-light">Tops & Blouses</span>
+                                </label>
+                                <label class="flex items-center">
+                                    <input type="checkbox" name="interests" value="broeken" class="mr-2">
+                                    <span class="text-sm font-light">Broeken</span>
+                                </label>
+                            </div>
+                        </div>
+                        <div>
+                            <label class="block text-sm font-light text-stone-700 mb-3">Ervaring met K-Mode</label>
+                            <div class="space-y-2">
+                                <label class="flex items-center">
+                                    <input type="radio" name="experience" value="geen" class="mr-2">
+                                    <span class="text-sm font-light">Geen ervaring</span>
+                                </label>
+                                <label class="flex items-center">
+                                    <input type="radio" name="experience" value="beetje" class="mr-2">
+                                    <span class="text-sm font-light">Een beetje</span>
+                                </label>
+                                <label class="flex items-center">
+                                    <input type="radio" name="experience" value="veel" class="mr-2">
+                                    <span class="text-sm font-light">Veel ervaring</span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <label for="comments" class="block text-sm font-light text-stone-700 mb-2">Opmerkingen</label>
+                        <textarea id="comments" name="comments" rows="2"  required class="w-full px-4 py-3 border border-stone-200 focus:border-stone-400 focus:outline-none transition-colors font-light resize-none" placeholder="Eventuele vragen of opmerkingen..."></textarea>
+                    </div>
+
+                    <div class="space-y-2">
+                        <div class="flex items-start">
+                            <input type="checkbox" id="newsletter" name="newsletter" class="mt-1 mr-3">
+                            <label for="newsletter" class="text-sm text-stone-600 font-light leading-relaxed">
+                                Nieuwsbrief ontvangen over collecties en aanbiedingen
+                            </label>
+                        </div>
+                        <div class="flex items-start">
+                            <input type="checkbox" id="privacy" name="privacy" required class="mt-1 mr-3">
+                            <label for="privacy" class="text-sm text-stone-600 font-light leading-relaxed">
+                                Ik ga akkoord met de <a href="#" class="text-stone-700 hover:text-stone-900 underline">voorwaarden</a> *
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="pt-4">
+                        <button type="submit" class="w-full bg-stone-700 text-white py-3 px-6 hover:bg-stone-800 transition-all duration-300 font-light btn-elegant shadow-lg hover:shadow-xl transform hover:scale-105">
+                            Aanmelden voor Opening
+                        </button>
+                    </div>
+                </form>
+
+                <div id="successMessage" class="hidden text-center py-8">
+                    <div class="text-green-600 mb-4">
+                        <svg class="w-16 h-16 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-light text-stone-800 mb-2">Bedankt voor je aanmelding!</h3>
+                    <p class="text-stone-600 font-light">We hebben je aanmelding ontvangen. Je ontvangt binnenkort een bevestiging via e-mail.</p>
+                    <button onclick="closeSignupModal()" class="mt-4 text-stone-700 hover:text-stone-900 font-light">Sluiten</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../assets/js/main.js"></script>
+</body>
+</html>
